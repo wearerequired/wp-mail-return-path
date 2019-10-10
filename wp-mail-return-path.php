@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WP Mail Return Path
  * Description: Set sender/return path for mail if not set.
- * Version:     1.0
+ * Version:     1.0.0
  * Author:      required
  * Author URI:  https://required.com
  * License:     GPL-2.0+
