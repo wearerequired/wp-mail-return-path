@@ -1,0 +1,29 @@
+{
+  "name": "wearerequired/wp-mail-return-path",
+  "description": "WordPress mu-plugin to set sender/return path for mail if not set..",
+  "type": "wordpress-muplugin",
+  "homepage": "https://github.com/wearerequired/wp-mail-return-path",
+  "license": "GPL-2.0-or-later",
+  "authors": [
+    {
+      "name": "required",
+      "email": "info@required.com",
+      "homepage": "https://required.com",
+      "role": "Company"
+    },
+    {
+      "name": "Dominik Schilling",
+      "email": "dominik@required.ch",
+      "role": "Developer"
+    }
+  ],
+  "keywords": [
+    "wordpress",
+    "wp-mail",
+    "return-path",
+    "spf"
+  ],
+  "require": {
+    "php": ">=5.6"
+  }
+}
