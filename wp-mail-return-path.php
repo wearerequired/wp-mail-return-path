@@ -2,7 +2,7 @@
 /**
  * Plugin Name: WP Mail Return Path
  * Description: Set sender/return path for mail if not set.
- * Version:     1.0.0
+ * Version:     1.1.0
  * Author:      required
  * Author URI:  https://required.com
  * License:     GPL-2.0+
@@ -23,6 +23,11 @@ namespace Required\WPMailReturnPath;
  * @param \PHPMailer $phpmailer The PHPMailer instance (passed by reference).
  */
 function set_sender( $phpmailer ) {
+	$environment_type = wp_get_environment_type();
+	if ( 'local' === $environment_type || 'development' === $environment_type ) {
+		return;
+	}
+
 	if ( '' === $phpmailer->Sender ) {
 		$phpmailer->Sender = $phpmailer->From;
 	}
